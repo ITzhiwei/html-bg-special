@@ -3,4 +3,5 @@
 特效截图有
 
 - 花朵 
-[![]('./readme-img/1.png')](./1.html)
+
+[![]('readme-img/1.png')](1.html)
