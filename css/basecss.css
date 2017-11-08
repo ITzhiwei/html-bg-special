@@ -1,0 +1,4 @@
+body{font-size:18px;}
+@media screen and (max-width:450px) {
+	body{font-size:18px;}
+}
