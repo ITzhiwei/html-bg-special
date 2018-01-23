@@ -2,7 +2,7 @@
 这个一个html背景特效收集的文件
 特效截图有
 
-![](/readme-img/1.png =200x200)
+![](/readme-img/1.png){:height="200px" width="200px"}
 
 ![](/readme-img/2.png)
 
