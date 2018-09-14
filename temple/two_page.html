@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.pfinaljs = {};
+        window.pfinaljs.base = './pfinaljs/';
+    </script>
+    <script src="./pfinaljs/require.js"></script>
+    <script src="./pfinaljs/config.js"></script>
+    <script>
+        require(['pfinaljs', 'jquery', 'bootstrap'])
+    </script>
+    <style>
+        .pf-container {
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 0px;
+        }
+
+        .pf-nav {
+            height: 75px;
+            border-radius: 0px;
+        }
+
+        ul.pf-nav {
+            width: 60%;
+        }
+
+        ul.pf-nav li {
+            height: 75px;
+            width: 15%;
+            text-align: center;
+            font-weight: bold
+        }
+
+
+        ul.pf-nav li a {
+            line-height: 45px;
+        }
+
+        .navbar .pf-nav .active_two a {
+            background-color: black;
+            color: aliceblue;
+            font-size: 2rem;
+        }
+
+        .mt-20 {
+            margin-top: 20px;
+        }
+
+        .mt {
+            margin: 0 auto;
+        }
+
+        .pf-navbar {
+            width: 50%;
+        }
+
+        .pf-navbar .active_two a {
+            background-color: black;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        .container .nav-pills li>a {
+            border-radius: 0px;
+        }
+
+        .pf-goods {
+            min-height: 500px;
+        }
+
+        .border {
+            border: 1px solid #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default pf-nav pf-container" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header pf-nav">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/logo.png">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse pf-nav">
+                <ul class="nav navbar-nav navbar-right pf-nav">
+                    <li class="active_two"><a href="#">HOME</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">BLOG <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </header>
+    <section>
+        <div class="pf-container">
+            <img src="./images/banner.png" style="width:100%;height:800px;" alt="">
+        </div>
+
+        <div class="container mt-20">
+            <ul class="nav nav-pills pf-navbar mt">
+                <li role="presentation" class="active_two"><a href="#">ALL</a></li>
+                <li role="presentation"><a href="#">Art Work</a></li>
+                <li role="presentation"><a href="#">Logo Design</a></li>
+            </ul>
+        </div>
+        <div class="container pf-goods mt-20 ">
+            <div class="row">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <img src="./images/goods_1.png" alt="">
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <img src="./images/goods_2.png" alt="">
+                        <img src="./images/goods_3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
