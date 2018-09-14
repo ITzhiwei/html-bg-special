@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.pfinaljs = {};
+        window.pfinaljs.base = './pfinaljs/';
+    </script>
+    <script src="./pfinaljs/require.js"></script>
+    <script src="./pfinaljs/config.js"></script>
+    <script>
+        require(['pfinaljs','jquery','bootstrap'])
+    </script>
+    <style>
+        #section-top{
+                background-color:#8076a3;border-radius: 0px;min-height:400px;color: aliceblue;
+                text-align: center
+            }
+            .desc h1 {
+                color: #424c6e;
+                font-weight: normal;
+                margin: 0;
+                text-align: center;
+                font-size: 30px;
+                line-height: 1.5em;
+            }
+            .desc p.desc-info {
+                font-size: 14px;
+                width: 80%;
+                margin: 15px auto 50px;
+                line-height: 1.8em;
+            }
+            .desc .item {
+                background: #fff;
+                padding: 30px 20px 20px;
+                text-align: center;
+                box-shadow: 0 1px 20px 0 rgba(175, 176, 176, 0.3);
+            }
+            .desc .item i{
+                font-size: 70px;
+                color: #2986CE;
+            }
+            .desc .item p {
+                color: #777;
+                font-size: 14px;
+                line-height: 2em;
+            }
+            
+            .content{
+                text-align: center;
+                margin-top: 50px;
+                border-top: 1px solid #cccccc;
+            }
+            .content .pf-title {
+                color: #424c6e;
+                font-weight: bold;
+                margin-top: 50px;
+                text-align: center;
+                font-size: 28px !important;
+                line-height: 1.5em;
+            }
+            p.pf-info {
+                font-size: 14px;
+                width: 90%;
+                margin: 15px auto 50px;
+                line-height: 1.8em;
+            }
+            .thumbnail .img {
+                height: 150px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .thumbnail  div.caption h3 {
+                font-size: 16px;
+                font-weight: 200;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            footer{
+                padding: 50px 0px 50px;
+                background-color: #2C303B;
+                color: #e5e5e5;
+            }
+            footer a {
+                color: #cccccc
+            }
+            footer .item {
+                margin-top: 0px;
+            }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar navbar-default" style="margin-bottom:0px;border-radius: 0px;" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Title</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#"> <i class="fa fa-video-camera" aria-hidden="true"></i> 课程视频</a></li>
+                    <li><a href="#"> <i class="fa fa-meanpath" aria-hidden="true"></i> 文章代码</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Admin</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">操作 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </header>
+    <section class="container">
+        <div class="jumbotron" id="section-top">
+            <h1>PFinalJs</h1>
+            <p>一个有信念者所开发出的力量，大于99个只有兴趣者。</p>
+            <p> <i class="fa fa-github "></i> <a href="https://github.com/Neroxiezi" style="color:aliceblue">https://github.com/Neroxiezi</a></p>
+            <p> <i class="fa fa-bold    "></i> <a href="https://firday-go.cc" style="color:aliceblue">https://firday-go.cc</a>
+            </p>
+        </div>
+        <div class="row desc">
+            <h1>开发大牛带你提升段位</h1>
+            <p class="text-center desc-info">
+                开发专家针对PHP与WEB前端精心录制的系统课程，轻松帮助小白快速掌握开发技能，打通职场晋升通道
+                <br>
+            </p>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 item">
+                    <i class="fa fa-caret-square-o-up" aria-hidden="true"></i>
+                    <h2>海量视频大放送</h2>
+                    <p>
+                        我们录制发布了数千课高质量视频教程，视频在优酷、土豆等网站拥有非常高的播放量，无数技术爱好者受益其中，直到目前我们依然在保持视频更新。
+                    </p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 item">
+                    <i class="fa fa-arrows-alt"></i>
+                    <h2>精细讲解不糊弄</h2>
+                    <p>
+                        课程以实际需求为切入点，除了讲解知识点的基础概念和基本应用外，还融入了讲师多年的一线开发经验。我们会用通俗易懂的方式，为你传授扎实的真功夫。
+                    </p>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 item">
+                    <i class="fa fa-life-ring    "></i>
+                    <h2>新技术一网打尽</h2>
+                    <p>我们是一群痴迷技术的工程师，无时无刻在探索和实践着新的技术，我们的课程实用性、高效性，紧追市场需求，是你择业、跳槽的好帮手。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row content">
+            <h1 class="pf-title">推荐课程</h1>
+            <p class="pf-info">
+                我们将紧随市场动态，准确把握每一个需求爆点，为你第一时间奉上实战前沿的技术视频。
+                市场的需求就是我们的追求，<br>来后盾人学习掌握前沿的企业级开发技术，成就高薪指日可待！
+            </p>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="img">
+                            <img src="http://houdunren.oss-cn-hangzhou.aliyuncs.com/1525924468daf3e34.jpg">
+                        </div>
+                        <div class="caption">
+                            <h3>Git版本控制你需要掌握</h3>
+                            <p class="row">
+                                <span class="col-sm-6">
+                                    <i class="fa fa-user" aria-hidden="true"></i> 25294 </span>
+                                <span class="col-sm-6 text-right">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 4 小时
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="img">
+                            <img src="http://houdunren.oss-cn-hangzhou.aliyuncs.com/1525924468daf3e34.jpg">
+                        </div>
+                        <div class="caption">
+                            <h3>Git版本控制你需要掌握</h3>
+                            <p class="row">
+                                <span class="col-sm-6">
+                                    <i class="fa fa-user" aria-hidden="true"></i> 25294 </span>
+                                <span class="col-sm-6 text-right">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 4 小时
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="img">
+                            <img src="http://houdunren.oss-cn-hangzhou.aliyuncs.com/1525924468daf3e34.jpg">
+                        </div>
+                        <div class="caption">
+                            <h3>Git版本控制你需要掌握</h3>
+                            <p class="row">
+                                <span class="col-sm-6">
+                                    <i class="fa fa-user" aria-hidden="true"></i> 25294 </span>
+                                <span class="col-sm-6 text-right">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 4 小时
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="img">
+                            <img src="http://houdunren.oss-cn-hangzhou.aliyuncs.com/1525924468daf3e34.jpg">
+                        </div>
+                        <div class="caption">
+                            <h3>Git版本控制你需要掌握</h3>
+                            <p class="row">
+                                <span class="col-sm-6">
+                                    <i class="fa fa-user" aria-hidden="true"></i> 25294 </span>
+                                <span class="col-sm-6 text-right">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 4 小时
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="padding-top:10px;">
+                    <h4>
+                        我们的使命：传播互联网前沿技术，帮助更多的人实现梦想
+                    </h4>
+                    <p class="tel">
+                        <i class="fa fa-television" aria-hidden="true"></i>
+                        咨询热线: 17621166911
+                    </p>
+                    <p class="tel">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        BUG反馈: <a href="mailto:lampxiezi@163.com">lampxiezi@163.com</a>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="item">
+                        <h3>开源产品</h3>
+                        <ul>
+                            <li><a href="https://friday-go.cc/">南丞嘚吧嘚博客</a></li>
+                            <li><a href="https://github.com/Neroxiezi/pfinal-array">pfinal-array开发包</a></li>
+                            <li><a href="https://github.com/Neroxiezi/PHP-ML-study">PHP-ML 中文学习</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
