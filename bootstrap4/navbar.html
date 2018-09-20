@@ -82,7 +82,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <form class="form-inline">
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email">
@@ -95,8 +95,74 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+    </div> -->
+    <div class="container">
+        <form>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio">自定义单选框 1</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+                <label class="custom-control-label" for="customRadio2">自定义单选框 2</label>
+            </div>
+        </form>
+        <br>
+        <form>
+            <label for="customRange">自定义滑块控件</label>
+            <input type="range" class="custom-range" id="customRange" name="points1">
+        </form>
+        <br>
+        <form>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">选择文件</label>
+            </div>
+        </form>
     </div>
 
+    <div class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="carousel-item">
+            <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+            <div class="carousel-caption">
+                <h3>第一张图片描述标题</h3>
+                <p>描述文字!</p>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
