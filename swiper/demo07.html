@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper学习</title>
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+    <style>
+        .blue-slide {
+            background: #4390EE;
+            color: #fff;
+        }
+
+        .swiper-slide {
+            line-height: 300px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .giav_slide {
+            background: rgb(204, 204, 204);
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide blue-slide swiper-slide-active">slider1</div>
+            <!-- <div class="swiper-slide blue-slide swiper-slide-next">slider2</div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script>
+        /**
+           当没有足够的slide切换时，例如只有1个slide（非loop），swiper会失效且隐藏导航等。默认不开启这个功能。 
+        */
+
+        var mySwiper = new Swiper('.swiper-container', {
+            watchOverflow: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            scollbar: {
+                el: '.swiper-scrollbar'
+            }
+        })
+    </script>
+</body>
+
+</html>

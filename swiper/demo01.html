@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper学习</title>
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+    <style>
+        .swiper-slide {
+            height: 200px;
+        }
+
+        .swiper-slide:first-child {
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .swiper-slide:last-child {
+            background: #FFF909;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">slider1</div>
+            <div class="swiper-slide">slider2</div>
+            <div class="swiper-slide">slider3</div>
+        </div>
+    </div>
+    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: true,  //自动开始展示
+            initialSlide:1,  // 从哪个开始展示
+            // direction:'vertical', //切换方式,  vertical 竖向切换  horizontal 横向切换    默认是横向切换
+            speed:100,  // 切换速度  默认单位 ms 默认是300
+            grabCursor: true, // 设置鼠标指针 true 会变成小手
+            parallax:true,    // 开启视觉差     
+        })
+    </script>
+</body>
+
+</html>

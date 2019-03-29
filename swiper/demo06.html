@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper学习</title>
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+    <style>
+        .blue-slide {
+            background: #4390EE;
+            color: #fff;
+        }
+
+        .swiper-slide {
+            line-height: 300px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .giav_slide {
+            background: rgb(204, 204, 204);
+            color: #fff
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide blue-slide swiper-slide-active">slider1</div>
+            <div class="swiper-slide swiper-slide-next" style="background: rgb(204, 204, 204); width: 800px;">slider2</div>
+            <div class="swiper-slide" style="background: rgb(204, 204, 204); width: 800px;">slider3</div>
+        </div>
+    </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    <script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script>
+       var mySwiper = new Swiper('.swiper-container',{
+           loop:true,
+           on:{
+               slideChangeTransitionStart:function(){
+                   alert('初始化时触发了一次回调')
+               }
+           }
+
+       })
+    </script>
+</body>
+
+</html>

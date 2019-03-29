@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>swiper学习</title>
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.min.css">
+    <style>
+        /* .swiper-slide {
+            height: 200px;
+        } */
+
+        .swiper-slide:first-child {
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        .swiper-slide:last-child {
+            background: #FFF909;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<!-- 
+    swiper parallx 设置为true
+    在所需要的元素上增加 data-swiper
+
+
+
+ -->
+
+<body>
+    <div class="swiper-container">
+        <div data-swiper-parallax="-23%" data-swiper-parallax-duration="3000">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="title" data-swiper-parallax="-100">从右边100px开始进入</div>
+                    <div class="subtitle" data-swiper-parallax="-200">从右边200px开始进入</div>
+                    <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                        <p>从右边300px开始进入，时间600ms</p>
+                    </div>
+                    <div data-swiper-parallax="0" data-swiper-parallax-opacity="0.5">透明度变化</div>
+                    <div data-swiper-parallax-scale="0.15">缩放变化</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules/swiper/dist/js/swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        parallax: true, // 开启视觉差     
+    })
+</script>
+
+</html>
