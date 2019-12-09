@@ -76,3 +76,8 @@ label {
 	color: #333333;
 	margin-left:-1em;
 }
+
+.up_phone_notice {
+	color:darkred;
+	font-size: 1rem;
+}
