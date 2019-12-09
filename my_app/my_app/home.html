@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>终南大讲堂</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="plugin/swipper/css/swiper.css"> -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <style>
+/*        * {
+            touch-action: none;
+        }
+ */
+        .mt-1 {
+            margin-top: 1rem;
+        }
+		.cat_active {
+			border-bottom: 2px solid #2AC845;
+		}
+    </style>
+</head>
+
+<body>
+	<header class="mui-bar mui-bar-nav">
+	        <h1 class="mui-title">终南大讲堂</h1>
+	    </header>
+    <div class="mui-content">
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+			<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+			  <a href="#">
+				<img src="images/2013111656174641.jpg">
+			  </a>
+			</div>
+			<!-- 第一张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="images/2013111656241109.jpg">
+			  </a>
+			</div>
+			<!-- 第二张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="images/2013111656399689.jpg">
+			  </a>
+			</div>
+			<!-- 第三张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="images/2016081958022257.jpg">
+			  </a>
+			</div>
+			<!-- 第四张 -->
+			<div class="mui-slider-item">
+			  <a href="#">
+				<img src="images/2016081464451365.jpg">
+			  </a>
+			</div>
+			<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			<div class="mui-slider-item mui-slider-item-duplicate">
+			  <a href="#">
+				<img src="images/2016081464451365.jpg">
+			  </a>
+			</div>
+		  </div>
+		  <div class="mui-slider-indicator">
+			<div class="mui-indicator mui-active"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+			<div class="mui-indicator"></div>
+		  </div>
+		</div>
+    <ul class="mui-table-view mui-grid-view mui-grid-4">
+    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+    	<a href="#">
+    		<span class="mui-icon mui-icon-home"></span>
+    		<a href="" class="cat_active"><div class="mui-media-body">终南研学</div></a>
+    	</a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+    	<a href="#">
+    		<span class="mui-icon mui-icon-email"></span>
+    		<a href=""><div class="mui-media-body">终南问道</div></a>
+    	</a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+    	<a href="#">
+    		<span class="mui-icon mui-icon-chatbubble"></span>
+    		<a href=""><div class="mui-media-body">终南论道</div></a>
+    	</a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+    	<a href="#">
+    		<span class="mui-icon mui-icon-location"></span>
+    		<a href=""><div class="mui-media-body">终南文库</div></a>
+    	</a>
+    </li>
+	</ul>
+    <div class="mui-card">
+    		<div class="mui-card-header">推荐课程</div>
+    		<div class="mui-card-content">
+    			<ul class="mui-table-view">
+    				<li class="mui-table-view-cell mui-media">
+    					<a href="javascript:;">
+    						<img class="mui-media-object mui-pull-left" src="images/2013111656174641.jpg">
+    						<div class="mui-media-body">
+    							幸福
+    							<p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+    						</div>
+    					</a>
+    				</li>
+    				<li class="mui-table-view-cell mui-media">
+    					<a href="javascript:;">
+    						<img class="mui-media-object mui-pull-left" src="images/2013111656241109.jpg">
+    						<div class="mui-media-body">
+    							木屋
+    							<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+    						</div>
+    					</a>
+    				</li>
+    				<li class="mui-table-view-cell mui-media">
+    					<a href="javascript:;">
+    						<img class="mui-media-object mui-pull-left" src="images/2013111656399689.jpg">
+    						<div class="mui-media-body">
+    						    CBD
+    							<p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+    						</div>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    		<div class="mui-card-footer">
+    			<a href=""><span class="mui-icon mui-icon-more-filled"></span></a>
+    		</div>
+    	</div>
+    
+	</div>
+    <!-- <script src="plugin/swipper/js/swiper.min.js"></script> -->
+    <script type="text/javascript" charset="utf-8">
+        mui.init()
+        
+    </script>
+</body>
+
+</html>
